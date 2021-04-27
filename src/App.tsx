@@ -12,8 +12,10 @@ const getDisplayValue = (count: number) => {
 		var newdisplay = "Wow that's pretty good!"
 	} else if (count <= 999 && count >= 100) {
 		var newdisplay = "You are the best!"
-	} else {
+	} else if (count > 999) {
 		var newdisplay = "Wow good job!"
+	} else {
+		var newdisplay = "You suck so bad!"
 	}
 	return newdisplay
 }
